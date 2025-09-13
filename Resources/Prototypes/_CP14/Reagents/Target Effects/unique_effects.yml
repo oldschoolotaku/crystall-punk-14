@@ -1,0 +1,24 @@
+- type: reagent
+  id: CP14UniqueEffectGrowth
+  name: Growth solution
+  desc: Makes you grow up in the size, making you deal more damage and receiving less, at the cost of being not able to fit in certain holes and being slower
+  group: CP14UniqueEffects
+  flavor: CP14Stinging
+  color: "#633223"
+  physicalDesc: cp14-reagent-physical-desc-ferrous
+  worksOnTheDead: true
+  metabolisms:
+    Narcotic:
+      metabolismRate: 0.05
+      effects:
+      - !type:CP14ChangeSizeEntityEffect
+        size: 2
+        permanent: false
+      # - !type:CP14ChangeArmorEntityEffect
+      #   damage:
+      #     groups:
+      #       Brute: 0.8
+      - !type:MovespeedModifier
+        walkSpeedModifier: 0.75
+        sprintSpeedModifier: 0.75
+  pricePerUnit: 3.0 
