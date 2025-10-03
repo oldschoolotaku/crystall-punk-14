@@ -13,8 +13,8 @@
     rootTask:
       task: SimpleHostileCompound
   - type: MovementSpeedModifier
-    baseWalkSpeed: 3
-    baseSprintSpeed: 5
+    baseWalkSpeed: 2.6
+    baseSprintSpeed: 4
   - type: Sprite
     drawdepth: Mobs
     sprite: _CP14/Mobs/Animals/cat.rsi
@@ -108,7 +108,7 @@
     bloodReagent: CP14BloodAnimal
   - type: Tag
     tags:
-      - CannotSuicide
+      - CannotSuicide # T_T
 
 - type: entity
   parent: CP14MobCatBase
@@ -170,4 +170,4 @@
     - enum.DamageStateVisualLayers.Base:
         walking: CP14CatColors
     - enum.DamageStateVisualLayers.BaseUnshaded:
-        walking-overlay: CP14CatColors
+        walking-overlay: CP14CatColorsSpots
